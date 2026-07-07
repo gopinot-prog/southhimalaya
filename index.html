@@ -21,6 +21,7 @@
             align-items:center;
             min-height:100vh;
             text-align:center;
+            overflow:hidden;
         }
 
         .container{
@@ -28,15 +29,30 @@
             padding:40px;
         }
 
+        .logo{
+            margin-bottom:30px;
+            animation:float 3s ease-in-out infinite;
+        }
+
+        .logo img{
+            width:180px;
+            max-width:80%;
+            height:auto;
+            display:block;
+            margin:0 auto;
+            filter:drop-shadow(0 10px 25px rgba(0,0,0,.35));
+        }
+
         h1{
             font-size:3rem;
-            margin-bottom:20px;
+            margin-bottom:15px;
+            font-weight:700;
         }
 
         h2{
-            color:#ffd54f;
-            margin-bottom:20px;
-            font-weight:normal;
+            color:#FFD54F;
+            margin-bottom:25px;
+            font-weight:400;
         }
 
         p{
@@ -45,20 +61,36 @@
             color:#e5e7eb;
         }
 
-        .icon{
-            font-size:70px;
-            margin-bottom:20px;
-        }
-
         .footer{
             margin-top:40px;
             font-size:14px;
             color:#cbd5e1;
         }
 
-        @media(max-width:600px){
+        @keyframes float{
+            0%{
+                transform:translateY(0);
+            }
+            50%{
+                transform:translateY(-10px);
+            }
+            100%{
+                transform:translateY(0);
+            }
+        }
+
+        @media(max-width:768px){
+
+            .logo img{
+                width:140px;
+            }
+
             h1{
                 font-size:2.2rem;
+            }
+
+            h2{
+                font-size:1.3rem;
             }
 
             p{
@@ -67,18 +99,21 @@
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <div class="icon">🚧</div>
+    <div class="logo">
+        <img src="logo.png" alt="South Himalaya Logo">
+    </div>
 
     <h1>South Himalaya</h1>
 
-    <h2>Website Under Construction</h2>
+    <h2>🚧 Website Under Construction 🚧</h2>
 
     <p>
-        We're working hard to build something amazing.
+        We're working hard to create a better experience for you.
         Our new website will be launching soon.
     </p>
 
