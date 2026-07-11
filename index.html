@@ -3,127 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South Himalaya - Under Construction</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            background:linear-gradient(135deg, #0f172a, #1e3a8a, #25eb36);
-            color:#fff;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            min-height:100vh;
-            text-align:center;
-            overflow:hidden;
-        }
-
-        .container{
-            max-width:700px;
-            padding:40px;
-        }
-
-        .logo{
-            margin-bottom:30px;
-            animation:float 3s ease-in-out infinite;
-        }
-
-        .logo img{
-            width:180px;
-            max-width:80%;
-            height:auto;
-            display:block;
-            margin:0 auto;
-            filter:drop-shadow(0 10px 25px rgba(0,0,0,.35));
-        }
-
-        h1{
-            font-size:3rem;
-            margin-bottom:15px;
-            font-weight:700;
-        }
-
-        h2{
-            color:#FFD54F;
-            margin-bottom:25px;
-            font-weight:400;
-        }
-
-        p{
-            font-size:1.1rem;
-            line-height:1.8;
-            color:#e5e7eb;
-        }
-
-        .footer{
-            margin-top:40px;
-            font-size:14px;
-            color:#cbd5e1;
-        }
-
-        @keyframes float{
-            0%{
-                transform:translateY(0);
-            }
-            50%{
-                transform:translateY(-10px);
-            }
-            100%{
-                transform:translateY(0);
-            }
-        }
-
-        @media(max-width:768px){
-
-            .logo img{
-                width:140px;
-            }
-
-            h1{
-                font-size:2.2rem;
-            }
-
-            h2{
-                font-size:1.3rem;
-            }
-
-            p{
-                font-size:1rem;
-            }
-        }
-    </style>
+    <title>Home - South Himalaya Energy Consultants</title>
+    <meta name="description" content="South Himalaya is a leading sustainable energy innovative solution provider company. We provide sustainable energy analysis and consultancy.">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="South Himalaya Energy Consultants">
+                </a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">&#x2630;</button>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item active">Home</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+                    <li><a href="#" class="btn-login">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="logo">
-        <img src="logo.png" alt="South Himalaya Logo">
-    </div>
+    <!-- Homepage Slider -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="images/slider1.jpg" alt="Sustainable Energy Solution 1">
+            </div>
+            <div class="slide">
+                <img src="images/slider2.jpg" alt="Sustainable Energy Solution 2">
+            </div>
+            <div class="slide">
+                <img src="images/slider3.jpg" alt="Sustainable Energy Solution 3">
+            </div>
+        </div>
+        
+        <!-- Slider Navigation Controls -->
+        <button class="slider-btn slider-btn-prev" aria-label="Previous Slide">&#10094;</button>
+        <button class="slider-btn slider-btn-next" aria-label="Next Slide">&#10095;</button>
+        
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
 
-    <h2>🚧 Website Under Construction 🚧</h2>
+    <!-- Welcome Section -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="section-title-container">
+                <h2 class="section-title">Welcome <span>to South Himalaya Consultant</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <p class="welcome-desc">
+                South Himalaya is a leading sustainable energy innovative solution provider company and having capability in providing sustainable energy analysis and consultancy is sought by leading companies and organizations.
+            </p>
+            
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Thermal Power -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <img src="images/icon_thermal.png" alt="Thermal Power Icon">
+                    </div>
+                    <h3>Thermal Power</h3>
+                    <p>
+                        Power supplied from private power producers who has Thermal Power Plant that use coal as fuel to produce power.
+                    </p>
+                    <a href="mailto:thermal@southhimalaya.com" class="service-email">thermal@southhimalaya.com</a>
+                </div>
+                
+                <!-- Wind Power -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <img src="images/icon_wind.png" alt="Wind Power Icon">
+                    </div>
+                    <h3>Wind</h3>
+                    <p>
+                        Sale of Wind Power through captive power purchase. We study the requirements of each individual consumer and provide a package for wind power that would suit their requirements. Biomass plants come under renewable energy, since they use bio waste for power generation.
+                    </p>
+                    <a href="mailto:wind@southhimalaya.com" class="service-email">wind@southhimalaya.com</a>
+                </div>
+                
+                <!-- Solar Power -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <img src="images/icon_solar.png" alt="Solar Power Icon">
+                    </div>
+                    <h3>Solar Power</h3>
+                    <p>
+                        Solar power is the the conversion of the energy from the sun to usable electricity. The most common source of solar power utilizes photovoltaic cells to convert sunlight into electricity. Photovoltaics utilize a semi-conductor to absorb the radiation from the sun, when the semi-conductor abosrbs this radiation it emits electrons, which are harnessed as electricity.
+                    </p>
+                    <a href="mailto:solar@southhimalaya.com" class="service-email">solar@southhimalaya.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        We're working hard to create a better experience for you.
-        Our new website will be launching soon.
-    </p>
+    <!-- Trusted Partners -->
+    <section class="partners-section text-center">
+        <div class="container">
+            <h3 class="partners-title">Trusted <span>Partners:</span></h3>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/partner_ibpil.png" alt="IBPIL">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner_goyal.png" alt="GOYAL GROUP">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner_ksk.png" alt="KSK">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner_logo4.png" alt="Partner Logo">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p style="margin-top:20px;">
-        Thank you for your patience and support.
-    </p>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Google+</a>
+            </div>
+            <div class="copyright">
+                &copy; 2015 South Himalaya Consultant. All rights reserved. Powered By <a href="#" target="_blank">MRG Soft</a>.
+            </div>
+        </div>
+    </footer>
 
-    <div class="footer">
-        &copy; 2026 South Himalaya. All Rights Reserved.
-    </div>
-
-</div>
-
+    <script src="main.js"></script>
 </body>
 </html>
